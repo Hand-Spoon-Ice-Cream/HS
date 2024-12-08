@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ice Cream Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .flavor-item {
+      text-align: center;
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .flavor-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 5px solid #f8f8f8;
+    }
+
+    .flavor-item h3 {
+      font-size: 1.5em;
+      font-weight: 600;
+      margin-top: 15px;
+      color: #444;
+    }
+
+    .flavor-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 2.5em;
+      }
+
+      .flavor-item h3 {
+        font-size: 1.3em;
+      }
+    }
+     /* Add a pink and white gradient background */
+     body {
+      background: linear-gradient(to bottom right, #fff, #ff69b4);
+    }
+
+    /* Add a footer for branding */
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #000; /* Black */
+      color: #fff; /* White */
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    /* Add subtle animation on hover */
+    .flavor-item img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Ice Cream Menu</h1>
+    <div class="menu-grid">
+      <div class="flavor-item">
+        <img src="images/coconut.jpg" alt="Coconut Ice Cream">
+        <h3>Coconut Pineapple</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/bluegum.jpg" alt="Bluegum Ice Cream">
+        <h3>Blue Bubblegum</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/coffee.jpg" alt="Coffee Ice Cream">
+        <h3>Kona Coffee</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/mint.jpg" alt="Mint Ice Cream">
+        <h3>Mint Chocolate Chip</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/strawberry.jpg" alt="Strawberry Ice Cream">
+        <h3>Strawberry Swirl</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/chocolate.jpg" alt="Chocolate Ice Cream">
+        <h3>Chocolate</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/rainbow.jpg" alt="Rainbow Ice Cream">
+        <h3>Rainbow Sherbet</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/pbsmores.jpg" alt="PB S'mores Ice Cream">
+        <h3>Peanut Butter S'mores</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/gingerbread.jpg" alt="Gingerbread Ice Cream">
+        <h3>Gingerbread Man</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/coffeecookies.jpg" alt="Coffee Cookies Ice Cream">
+        <h3>Coffee & Cookies</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/lavender.jpg" alt="Lavender Ice Cream">
+        <h3>Lavender + Honey</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/pistachio.jpg" alt="Pistachio Ice Cream">
+        <h3>Pistachio Nut</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/maui.jpg" alt="Maui Ice Cream">
+        <h3>Maui Waui</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/caramel.jpg" alt="Caramel Ice Cream">
+        <h3>Salted Caramel</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/cherry.png" alt="Cherry Ice Cream">
+        <h3>Black Cherry</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/coneswirl.jpg" alt="Cone Swirl Ice Cream">
+        <h3>Waffle Cone Swirl</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/cookiedough.jpg" alt="Cookie Dough Ice Cream">
+        <h3>Cookie Dough</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/mocha.jpg" alt="Mocha Ice Cream">
+        <h3>Mocha Almond Fudge</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/rocky.jpg" alt="Rocky Road Ice Cream">
+        <h3>Rocky Road</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/death.jpg" alt="Death by Chocolate Ice Cream">
+        <h3>Death by Chocolate</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/blue.jpg" alt="Blue Ice Cream">
+        <h3>Blue Cookie Monster</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/chip.jpg" alt="Chip Ice Cream">
+        <h3>Chocolate Chip</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/cotton.jpg" alt="Cotton Candy Ice Cream">
+        <h3>Cotton Candy</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/chocolatechip.jpg" alt="Chocolate Chip Ice Cream">
+        <h3>Choco Chip Cookie Dough</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/espresso.jpg" alt="Espresso Ice Cream">
+        <h3>Espresso</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/peppermint.jpg" alt="Peppermint Ice Cream">
+        <h3>Peppermint Stick</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/peanut.jpg" alt="Peanut Ice Cream">
+        <h3>Peanut Buddy</h3>
+      </div>
+      <div class="flavor-item">
+        <img src="images/pop.jpg" alt="Pop Ice Cream">
+        <h3>Pop & Rocks</h3>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
