@@ -58,3 +58,27 @@ flavorItems.forEach(item => {
     // Add any functionality here if needed
   });
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const directionsLink = document.getElementById('get-directions');
+  const destination = "320 Avenue I, Redondo Beach, CA 90277";
+
+  directionsLink.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          const userLocation = `${latitude},${longitude}`;
+          const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&origin=${userLocation}&destination=${encodeURIComponent(destination)}`;
+          window.open(googleMapsUrl, '_blank');
+        },
+        () => {
+          alert("Unable to retrieve your location. Please enable location services and try again.");
+        }
+      );
+    } else {
+      alert("Geolocation is not supported by your browser.");
+    }
+  });
+});
